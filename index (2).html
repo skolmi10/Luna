@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+  
+<head>
+  <meta charset="utf-8">
+  <title>The element selector</title>
+  <body>
+    <style>
+  body {
+    background-color: rgb(209, 129, 224);
+  }
+  
+  h1 {
+    color: rgb(241, 140, 196);
+  }
+  
+  #luna {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .menu ul {
+    display: flex;
+    padding: 0;
+    margin-left: 80px;
+    margin:0;
+    list-style: none;
+    
+  }
+  
+  .menu a {
+    display: block;
+    padding: 1em;
+    background-color: grey;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .menu a:hover {
+    background-color: rgb(134, 250, 115);
+
+  }
+  
+  .menu ul li ul {
+    display: none;
+    
+  }
+  
+  .menu ul li a:hover + ul, .menu ul li ul:hover {
+    display: block;
+  }
+  .menu{
+    border: 5px white dashed;
+    width: 29.5%;
+    margin-left: 40px;
+  }
+
+#titulo1
+ { background: grey;
+    width: 
+      13%;
+    margin-left: 500px;
+    
+  } 
+
+ #tema2{
+  background-color: white;
+   width: 25%;
+}
+#tema3{
+  background: white;
+}
+
+#contactos{
+  background: white;
+  width: 12%;
+}
+
+.margen{
+  background: white;
+  margin: 15px 20px 25px 400px;
+  padding: 5px px 30px 30px; 
+  width: 28%;
+  height:40px;
+}
+ #container {
+ width: px;
+ margin-left: 80px;
+}
+#imagen1 {
+  margin-left: 800px;
+}
+
+#imagen1 {
+    position: relative;
+top: 80px; left: 80px; }
+
+
+</style>
+</head>
+</head>
+<body>
+   <div id="container">
+  <nav class="menu">
+    <ul>
+      <li><a href="#">INICIO</a></li>
+      <li><a href="#">CONTENIDOS</a>
+        <ul>
+          <li><a href="#titulo1">SOBRE LA LUNA</a></li>
+          <li><a href="#tema2">DISTANCIAS Y MEDIDAS DE LA LUNA</a></li>
+          <li><a href="#tema3">FASES Y FECHAS LUNARES</a></li>
+        </ul>
+      </li>
+      <li><a href="#contactos">CONTACTOS</a></li>
+    </ul>
+  </nav>
+ 
+       
+  <h1 id="titulo1" class="margen"> LA LUNA </h1>
+     
+  <h3 id="seccion1">SOBRE LA LUNA</h3>
+
+     <p>
+  
+  <article >
+  El planeta tierra solo posee un satelite natural el cual llamamos Luna.Con un diámetro ecuatorial de 3474,8 km, es el quinto satélite más grande del sistema solar, mientras que en cuanto al tamaño proporcional respecto a su planeta es el satélite más grande: un cuarto del diámetro de la Tierra y 1/81 de su masa. Es, además, después de Ío, el segundo satélite más denso. Se encuentra en relación síncrona con la Tierra, siempre mostrando la misma cara hacia el planeta. El hemisferio visible está marcado con oscuros mares lunares de origen volcánico entre las brillantes montañas antiguas y los destacados astroblemas.
+  </article>
+  
+  <br>
+  
+  <p>A pesar de ser, en apariencia, el objeto más brillante en el cielo después del Sol, su superficie es en realidad muy oscura, con una reflexión similar a la del carbón. Su prominencia en el cielo y su ciclo regular de fases han hecho de la Luna un objeto con importante influencia cultural desde la antigüedad, tanto en el lenguaje como en el calendario, el arte o la mitología. La influencia gravitatoria de la Luna produce las mareas y el aumento de la duración del día. La distancia orbital de la Luna, cerca de treinta veces el diámetro de la Tierra, hace que se vea en el cielo con el mismo tamaño que el Sol y permite que la Luna cubra exactamente al Sol en los eclipses solares totales.</p>
+     
+     <p> Ahora te mostrare las diferentes medidas de la luna que existen:</p>
+     
+          <img id="imagen1"src="data:image/jpeg;base64,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">
+     
+     
+  
+  <ul>
+
+<li><h3 id="tema2"> Diametro ecuatorial de 3474,8km </h3>
+
+
+<li><h3 id="tema2"> Inclinación de 5,1454°</h3>
+
+
+<li><h3 id="tema2">Radio orbital de 384.403 kms</h3>
+
+
+<li><h3 id="tema2">Distancia minima de la luna a la tierra 384.352 kms</h3>
+
+
+<li><h3 id="tema2">Distancia máxima de la luna a la tierra 406.700 kms</h3>
+
+ 
+<li><h3 id="tema2">Distancia minima de la luna al sol 149.170.300 kms</h3>
+
+
+<li><h3 id="tema2">Distancia máxima de la luna al sol 150.004.588 kms</h3>
+
+
+<table border id="tema3"> 
+	<thead>
+		<tr>
+			<th>FASE LUNAR</th>
+			<th>FECHA JULIO-AGOSTO 2024</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Luna Nueva</td>
+				<td>5 de julio</td>
+				</tr>
+				<tr>
+				<td>Cuarto Creciente</td>
+				<td> 13 de julio</td>
+				</tr>
+				<tr>
+				<td>Luna Llena</td>
+				<td>21 de julio</td>
+				</tr>
+      <tr>
+				<td>Cuarto Menguante</td>
+				<td>28 de julio</td>
+				</tr>
+       <tr>
+				<td>Luna Nueva</td>
+				<td>4 de agosto</td>
+				</tr>
+       <tr>
+				<td>Cuarto Creciente</td>
+				<td>12 de agosto</td>
+				</tr>
+       <tr>
+				<td>Luna Llena</td>
+				<td>19 de agosto</td>
+				</tr>
+       <tr>
+				<td>Cuarto Menguante</td>
+				<td>26 de agosto</td>
+				</tr>
+			</tbody>
+	</table>
+  </p>
+
+  <a target="_blank"
+     
+     </div>
+    </footer>
+</body>
+
+</html>
+
+    <div class="container content">
+        <button type="button" class="btn btn-interactive" data-toggle="modal" data-target="#interactiveModal">
+            LUNA ROJA
+        </button>
+
+        <div class="modal fade" id="interactiveModal" tabindex="-1" role="dialog" aria-labelledby="interactiveModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="interactiveModalLabel">¿Porque se pone roja la luna?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                       Un motivo por el que la Luna suele verse de color rojizo o anaranjado sin importar la fase lunar en la que se encuentre el cuerpo celeste, es por los altos índices contaminantes o el exceso de polvo que se registra en una determinada zona geográfica, e incluso cuando hay presencia de grandes o muchos incendios.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Fases de la luna :D</p>
+    </footer>
+</body>
+
+</html>
+<a target="_blank"
+     href=https://starwalk.space/es/moon-calendar">Mas informacion sobre fases lunares</a>
+                                                              
+                                                                      
+       <aside>
+                <h4 id="contactos"> Autor de la pagina web </h4>
+                <p> DANIEL CAMILO ROZO MURCIA GRADO 10° SKOLMI TECNOLOGÍA</p>
+                                  
+<a href="#seccion1">Ir a la sección 1</a>
+            </aside>
+
+</div>
+<footer>
+
+</footer>
+
+</body>
+</html>
